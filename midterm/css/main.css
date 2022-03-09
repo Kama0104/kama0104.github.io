@@ -22,14 +22,10 @@ header{
 .row li{
     display: inline-block;
 }
-.row li:nth-child(1){
-    padding-left: -60px;
-}
-.row li:nth-child(2){
-    padding-left: 0px 190px;
-}
+
 .row li:nth-child(3){
-    padding-left: 0px 190px;
+
+    padding-right: 20px;
 }
 .row li:nth-child(1):after{
     content:"|";
@@ -61,7 +57,7 @@ a:link {
   }
 
 /*-------LIFE OF A STARFISH------- */
-.eminem{
+.snoop{
     background-image: url("../recourses/lone-starfish-wide.jpg");
     background-repeat: no-repeat;
     padding:100px;
@@ -69,7 +65,7 @@ a:link {
     margin: 0 auto;
     
 }
-.eminem h1{
+.snoop h1{
     font-size: 55px;
     font-weight: lighter;
     padding-top: 70px;
@@ -98,6 +94,8 @@ h3{
 }
 .wrapper p{
     font-size: 14px;
+    margin-right: 7px;
+
 }
 .wrapper li{
     text-align: left;
@@ -139,6 +137,11 @@ textarea {
 
 /*-------FOOTER------- */
 footer {
-    display:block
-    
+    display: block;
+    max-width: 1020px;
+    margin: 0 auto;
+    background-color: #c9e0de;
+    text-align: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
