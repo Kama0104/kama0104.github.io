@@ -1,15 +1,37 @@
+/*-------BLUE BACKGRND AND FONT OF THE PAGE------- */
+
 body{
     background-color: #aad4cf;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*-------HEADING AND THE NAV BAR------- */
+
+/*-------LIGHT BLUE BACKGRND------- */
 header{
     display: block;
     max-width: 1020px;
     margin: 0 auto;
     background-color: #c9e0de;
 }
+
+/*-------LONE STARFISH------- */
+.snoop{
+    background-image: url("../recourses/lone-starfish-wide.jpg");
+    background-repeat: no-repeat;
+    padding:100px;
+    max-width: 1140px;
+    margin: 0 auto;
+    
+}
+.snoop h1{
+    font-size: 55px;
+    font-weight: lighter;
+    padding-top: 70px;
+    text-align: center;
+    color: white;
+}
+
+/*-------NAV BAR------- */
 .row {
     max-width: 1140px;
     margin: 0 auto;
@@ -37,6 +59,8 @@ header{
     padding-left: 110px;
     padding-right: 110px;
 }
+
+
 /*-------STYLING THE NAV BAR LINKS------- */
 a:link {
     text-decoration: none;
@@ -56,22 +80,9 @@ a:link {
     text-decoration: underline;
   }
 
-/*-------LIFE OF A STARFISH------- */
-.snoop{
-    background-image: url("../recourses/lone-starfish-wide.jpg");
-    background-repeat: no-repeat;
-    padding:100px;
-    max-width: 1140px;
-    margin: 0 auto;
-    
-}
-.snoop h1{
-    font-size: 55px;
-    font-weight: lighter;
-    padding-top: 70px;
-    text-align: center;
-    color: white;
-}
+
+
+/*-------LIFE OF A STARFISH ARTICLE------- */
 .wrapper{
     font-family:Arial, Helvetica, sans-serif;
     max-width: 1140px;
@@ -106,7 +117,7 @@ h3{
     max-width: 1020px;
     margin: 0 auto;
     background-color: #c9e0de;
-    height: 340px;
+    height: 360px;
     width: 960px;
     border: 1px solid black;
     padding: 30px 15px;
@@ -131,11 +142,15 @@ textarea {
     height: 70px;
     margin: 10px 0px;
 }
+input[type=submit] {
+
+    height: 40px;
+ }
 .visit {
     margin: 10px 0px;
 }
 
-/*-------FOOTER------- */
+/*------- COPYRIGHT FOOTER------- */
 footer {
     display: block;
     max-width: 1020px;
