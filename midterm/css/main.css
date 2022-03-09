@@ -2,38 +2,77 @@ body{
     background-color: #aad4cf;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/*-------HEADING AND THE NAV BAR------- */
 header{
-    max-width: 1140px;
+    display: block;
+    max-width: 1020px;
     margin: 0 auto;
     background-color: #c9e0de;
 }
 .row {
     max-width: 1140px;
     margin: 0 auto;
+    font-size: 30px;
+    margin-top: -80px;
 }
 .row ul{
     text-align: center;
 }
 .row li{
-    display: inline-block;  
+    display: inline-block;
 }
-.row li::before{
+.row li:nth-child(1){
+    padding-left: -60px;
+}
+.row li:nth-child(2){
+    padding-left: 0px 190px;
+}
+.row li:nth-child(3){
+    padding-left: 0px 190px;
+}
+.row li:nth-child(1):after{
     content:"|";
+    padding-left: 120px;
+    padding-right: 120px;
 }
-.row a{
-    margin: 10px;
-    padding: 10px;
+.row li:nth-child(2):after{
+    content:"|";
+    padding-left: 110px;
+    padding-right: 110px;
 }
+/*-------STYLING THE NAV BAR LINKS------- */
+a:link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: rgb(180, 101, 44);
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+
+/*-------LIFE OF A STARFISH------- */
 .eminem{
     background-image: url("../recourses/lone-starfish-wide.jpg");
     background-repeat: no-repeat;
     padding:100px;
-    
     max-width: 1140px;
     margin: 0 auto;
     
 }
 .eminem h1{
+    font-size: 55px;
+    font-weight: lighter;
+    padding-top: 70px;
     text-align: center;
     color: white;
 }
@@ -42,38 +81,64 @@ header{
     max-width: 1140px;
     margin: 0 auto;
 }
+h2 {
+    font-size: 30px;
+    margin-left: 7px;
+}
+h3{
+    font-size: 25px;
+    margin-left: 7px;
+    margin-bottom: 10px;
+}
 .wrapper img{
-    width: 180px;
+    width: 210px;
     float: left;
     margin-right: 15px;
+    margin-left: 7px;
 }
 .wrapper p{
-    font-size: 13px;
+    font-size: 14px;
 }
-section {
-    max-width: 1140px;
-    margin: 0 auto;
-    background-color: #c9e0de;
+.wrapper li{
+    text-align: left;
 }
+
+/*-------CONTACT TO LEARN MORE------- */
 .contact-form{
-    max-width: 1140px;
+    max-width: 1020px;
     margin: 0 auto;
     background-color: #c9e0de;
-    height: 900px;
-    width: 1090px;
+    height: 340px;
+    width: 960px;
     border: 1px solid black;
     padding: 30px 15px;
     margin: auto;
+    position: relative;
 }
 input[type=text] {
     width: 100%;
     height: 20px;
+    margin: 10px 0px;
 }
 input[type=email] {
     width: 100%;
     height: 20px;
+    margin: 10px 0px;
+}
+input[type=radio] {
+   margin: 20px 0px;
 }
 textarea {
     width: 100%;
     height: 70px;
+    margin: 10px 0px;
+}
+.visit {
+    margin: 10px 0px;
+}
+
+/*-------FOOTER------- */
+footer {
+    display:block
+    
 }
