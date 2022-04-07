@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTM6130 Final Project - kama0104 </title>
-    <link rel="stylesheet" href="css/reset.css">
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- enables the icons from this website to be visible on our website -->
+    <script src="https://kit.fontawesome.com/e208911edf.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <nav>
+            <!-- nav organizes logo, menu bar, search button, main heading and text -->
             <img src="img/logo.png" alt="logo" class="logo">
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -21,61 +24,67 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <input type="search" name="search" id="search" placeholder="Search" required>
+            <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
             <h1>Welcome to Three Star Media</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi mollitia, molestiae ducimus inventore blanditiis vitae in, placeat, voluptas tenetur deleniti iure natus libero sint repellendus ratione? Placeat ipsa molestias corporis!</p>
         </nav>
+
+        <!-- snoop class organizes a button, h2 heading and text -->
         <div class="snoop">
             <img src="img/main-banner.jpg" alt="lobby" class="lobby">
-            <a class="Connect" href="#">Connect with us</a>
+            <button type="button">Connect with us<i class="fa-solid fa-caret-right"></i></button>
             <img src="img/about-us.jpg" alt="pingpong" class="aboutus">
             <h2 id="aboutus">About Us</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nisi, molestias accusamus officiis similique suscipit laudantium consectetur quod porro expedita ratione rem, sapiente iste dolorum. Illo voluptatem itaque numquam debitis.<br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsam et velit odit. Sint amet dolore minus consequuntur? Repellendus tempora minus, consequatur quas delectus earum aliquid quibusdam assumenda ipsam. Corporis.</p>
         </div>
     </header>
 
+        <!-- services class organizes h2, texts,buttons and caret icons -->
         <section class="services" id="services">
             <h2>Our Services</h2>
             <div>
                 <img src="img/digital.jpg" alt="digital">
                 <h3>Digital Transformation</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo velit pariatur dolores, in cum corporis debitis iure totam, quibusdam eligendi reiciendis incidunt adipisci odit nobis ipsum, amet quos illum omnis?</p>
-                <a class="digital" href="#">Digital Plans</a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo velit pariatur dolores, in cum corporis debitis iure totam, quibusdam eligendi reiciendis incidunt adipisci odit nobis ipsum, amet quos illum omnis.</p>
+                <button type="button">Digital Plans<i class="fa-solid fa-caret-right"></i></button>
             </div>
             <div>
                 <img src="img/marketing.jpg" alt="Marketing">
                 <h3>Marketing</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo velit pariatur dolores, in cum corporis debitis iure totam, quibusdam eligendi reiciendis incidunt adipisci odit nobis ipsum, amet quos illum omnis?</p>
-                <a class="marketing" href="#">Marketing Plans</a>
+                <button type="button">Marketing Plans<i class="fa-solid fa-caret-right"></i></button>
             </div>
             <div>
                 <img src="img/video.jpg" alt="Marketing">
                 <h3>Video Production</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo velit pariatur dolores, in cum corporis debitis iure totam, quibusdam eligendi reiciendis incidunt adipisci odit nobis ipsum, amet quos illum omnis?</p>
-                <a class="Video" href="#">Video Plans</a>
+                <button type="button">Video Plans<i class="fa-solid fa-caret-right"></i></button>
             </div>
             <div>
                 <img src="img/web.jpg" alt="web">
-                <h3>Video Production</h3>
+                <h3>Web Development</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo velit pariatur dolores, in cum corporis debitis iure totam, quibusdam eligendi reiciendis incidunt adipisci odit nobis ipsum, amet quos illum omnis?</p>
-                <a class="web" href="#">Web Development</a>
+                <button type="button">Web Plans<i class="fa-solid fa-caret-right"></i></button>
             </div>
             <div>
                 <img src="img/print.jpg" alt="print">
                 <h3>Print</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo velit pariatur dolores, in cum corporis debitis iure totam, quibusdam eligendi reiciendis incidunt adipisci odit nobis ipsum, amet quos illum omnis?</p>
-                <a class="print" href="#">Print Plans</a>
+                <button type="button">Print Plans<i class="fa-solid fa-caret-right"></i></button>
             </div>
         </section>
 
+         <!-- middle class organizes vision picture, h3, texts,button and caret icon -->
         <section class="middle">
             <div>
                 <img src="img/vision.jpg" alt="vision">
                 <h3>Our Vision</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo velit pariatur dolores, in cum corporis debitis iure totam, quibusdam eligendi reiciendis incidunt adipisci odit nobis ipsum, amet quos illum omnis.</p>
-                <a class="learn" href="#">Learn More</a>
+                <button type="button">Learn More<i class="fa-solid fa-caret-right"></i></button>
             </div>
         </section>
 
+        <!-- team class includes john and bob picture, h2, text,button and caret icon -->
         <section class="team" id="team">
             <h2>Our Team</h2>
             <div>
@@ -104,13 +113,14 @@
         
                     <label for="email">Message</label><br>
                     <textarea name="message"></textarea><br>
-                    <input type="submit" value="Send">  
+                    <button type="button">Send</button>  
                 </form>
         </section>
 
+        <!-- table to organize contents for Days and Hours -->
         <section>
             <h3>Hours of operation</h3>
-            <table frame="box">
+            <table>
                 <tr>
                     <th>Days</th>
                     <th>Hours</th>
@@ -126,12 +136,14 @@
             </table>
         </section>
 
+        <!-- adds location of the college -->
         <section>
             <h3>Location</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106713.1804656935!2d-75.90996009385509!3d45.34456610443564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1649259332887!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
+        <!-- adds copyright and a link to the unsplash website -->
         <footer>
-            <p>&copy; Copyright Three Star Media, 2020</p><br>
+            <p>&copy; Copyright Three Star Media, 2020</p>
             <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
         </footer>
     
