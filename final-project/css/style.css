@@ -55,10 +55,13 @@ a i {
     margin: 0  auto;
 }
 #search {
-  width: 680px;
+  width: 600px;
   margin-left: 10px;
   height: 35px;
   margin-bottom: 5px;
+}
+.search-btn {
+  cursor: pointer; 
 }
 .wrapper nav i{
   border: 1px solid #c78c06;
@@ -327,10 +330,7 @@ footer a {
   color: #c78c06;
 }
 
-
-
-
-/*  DESKTOP---------------- */
+/*  DESKTOP: changing the size of the backgrounds to 1200px, changing margins and paddings in order to look more accessible for a desktop user.---------------- */
 @media screen and (min-width: 760px) {
   .wrapper {
     max-width: 1200px;
@@ -374,17 +374,19 @@ footer a {
     height: 35px;
     margin-bottom: 10px;
   }
+  /* ABOUT US : use float:left to put the text and the picture next to eachother and add margin bottom--- */
   .wrapper .aboutus {
       width: 500px;
       float: left;
-      margin-right: 15px;
+      padding-right: 30px;
+      margin-right: 20px;
       margin-left: 90px;
   }
   .aboutuss {
     padding-bottom: 45px;
   }
 
-  /* ------GRID------ */
+  /* ------Our Services: for desktop, use grid to align the services section together based on the required column and row. ------ */
   .services {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -392,7 +394,6 @@ footer a {
     column-gap: 20px;
     row-gap: 20px;
   }
-  
   .services .digital {
     grid-column: 1 / span 3;
     grid-row: 1 / span 1;
@@ -413,10 +414,8 @@ footer a {
     grid-column: 5 / span 2;
     grid-row: 2 / span 1 ;
   }
-
+  
   /* _________our team: use flex for each picture and text of john doe and bob rite. flex-basis for containing half the width, set orders for them ____________________ */
-
-
   .team .wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -444,11 +443,12 @@ footer a {
   .team .wrapper .bobbio {
     background-color: #ffe6ac;
   }
-
+  .contact .wrapper input[type=text] {
+    height: 22px;
+    width: 600px;
+  }
   textarea {
     height: 160px;
     width: 600px;
   }
 }
-
-
