@@ -1,5 +1,5 @@
 
- /* adding font family and size to the whole code so i don't have to change them each time  */
+ /* HTML : adding font family and size to the whole code so i don't have to change them each time  */
 html {
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
@@ -8,8 +8,7 @@ body {
     background-color: #fff;
     background-size: 760px;
     color: #555;
-    font-weight: 300;
-    
+    font-weight: 300; 
 }
 h2 {
   font-size: 35px;
@@ -66,7 +65,7 @@ a i {
   width: 30px;
   height: 30px;
 }
-/* Using stage and prop: to add a low opacity shadow behind the text and hover the text over the background image. with the use of stage and prob and giving the top element an absolute position */
+/* Using stage and prop: to add a low opacity shadow behind the text and hover the text over the background image. with the use of stage and prob and giving the top element an absolute position. add a semi-transparent background to text */
 .wrapper .stage .prop {
   background: rgba(5, 6, 5, 0.6);
   position: absolute;
@@ -120,7 +119,7 @@ ul li a {
   text-decoration: none;
   color:#c78c06;
 }
-/* since the home link on the nav bar is deferent and it needs to be black, i have given a class to it  */
+/*the home link on the nav bar is different and it needs to be black, give specific class to it  */
 .wrapper nav ul .home a{
   padding-top: 100px;
   margin-top: 10px;
@@ -180,7 +179,7 @@ input[type=submit] {
     margin-left: 10px;
 }
 
-  /* --------------------------------------------------- */
+  /* Our services: for mobile images are to be the width of the screen.  -------------------------------------------- */
   .box {
     background-color: #ffe6ac;
     margin-bottom: 12px;
@@ -389,6 +388,7 @@ footer a {
     column-gap: 20px;
     row-gap: 20px;
   }
+  
   .services .digital {
     grid-column: 1 / span 3;
     grid-row: 1 / span 1;
@@ -440,6 +440,11 @@ footer a {
   }
   .team .wrapper .bobbio {
     background-color: #ffe6ac;
+  }
+
+  textarea {
+    height: 160px;
+    width: 600px;
   }
 }
 
