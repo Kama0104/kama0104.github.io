@@ -270,7 +270,7 @@ table, th, td {
   color: #222;
 }
 .hours .wrapper table td {
-  border: 1px solid 222;
+  border: 1px solid #222;
 }
 
 
@@ -366,7 +366,6 @@ footer a {
   }
   .wrapper .stage .prop {
     width:70%;
-    float: center;
     margin-left: 70px;
     padding-top: 150px;
     padding-bottom: 150px;
@@ -374,7 +373,6 @@ footer a {
   }
   #search {
     width: 180px;
-    float: center;
     margin-left: 800px;
     height: 35px;
     margin-bottom: 10px;
