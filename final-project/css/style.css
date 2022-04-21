@@ -1,13 +1,448 @@
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
+ /* adding font family and size to the whole code so i don't have to change them each time  */
+html {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
-h1 {
-    font-size: 80px;
+body {
+    background-color: #fff;
+    background-size: 760px;
+    color: #555;
+    font-weight: 300;
+    
 }
 h2 {
-    font-size: 55px;
+  font-size: 35px;
+  color: #222;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
 }
+
 h3 {
-    font-size: 38px;
+  color: #222;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
 }
+h4 {
+  padding-left: 10px;
+} 
+
+p {
+  font-size: 18px;
+  color: #222;
+  line-height: 18px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  font-weight: 500;
+}
+textarea {
+  height: 160px;
+  width: 760px;
+}
+a i {
+    margin-left: 15px;
+    font-size: 30px;
+  }
+  
+  /* Class wrapper: starting mobile size at 760px width. Adding wrapper to the sections of the website that need to be aligned with the same size. using object-fit: contain; to contain them within that width*/
+.wrapper {
+    max-width: 760px;
+    background-color: #ffe6ac;
+    margin: 0  auto;
+}
+#search {
+  width: 680px;
+  margin-left: 10px;
+  height: 35px;
+  margin-bottom: 5px;
+}
+.wrapper nav i{
+  border: 1px solid #c78c06;
+  width: 30px;
+  height: 30px;
+}
+/* Using stage and prop: to add a low opacity shadow behind the text and hover the text over the background image. with the use of stage and prob and giving the top element an absolute position */
+.wrapper .stage .prop {
+  background: rgba(5, 6, 5, 0.6);
+  position: absolute;
+  top:550px;
+  object-fit: contain;
+  width: 760px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  max-width: 1200px;
+}
+.wrapper .stage .lobby {
+  object-fit: contain;
+  width: 760px;
+  background-color: #ffe6ac;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  max-width: 1200px;
+}
+.wrapper .aboutus {
+  object-fit: contain;
+  width: 730px;
+  max-width: 760px;
+  background-color: #ffe6ac;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+.wrapper nav {
+    background-color: #222;
+}
+.wrapper nav .logo {
+  background-color: #c78c06;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+} 
+
+ul li{
+  text-align: center;
+  list-style: none;
+}
+ul li a {
+  display: block;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 3.333em;
+  padding: 0 10px 0 20px;
+  text-decoration: none;
+  color:#c78c06;
+}
+/* since the home link on the nav bar is deferent and it needs to be black, i have given a class to it  */
+.wrapper nav ul .home a{
+  padding-top: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #222;
+  font-size: 15px;
+  font-weight: 300;
+  background-color: #c78c06;
+  background-size: 760px;
+  background-position: center;
+}
+
+input {
+  text-align: left;
+  width: 100%;
+}
+
+header {
+  color: #222;
+  background-color: #ffe6ac;
+  background-size: 760px;
+  background-position: center;
+}
+
+/* CONNECT WITH US BUTTON */
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    font-size: 0.8rem;
+    color: #222;
+    background-color: #c78c06;
+    border: 20px solid #c78c06;
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 10px 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.wrapper .stage .prop p {
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  object-fit: contain;
+  margin-right: 20px;
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+.wrapper .stage .prop h1 {
+    font-size: 60px;
+    color: white;
+    font-weight: 700;
+    object-fit: contain;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+  /* --------------------------------------------------- */
+  .box {
+    background-color: #ffe6ac;
+    margin-bottom: 12px;
+    max-width: 760px;
+    margin: 0  auto;
+  }
+  .box img {
+    width: 760px;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+  .box h3 {
+    color: #222;
+    font-size: 1.5rem;
+  }
+.box .wrapper{
+  margin-left: 10px;
+}
+.box h2 {
+  background-color: white;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 15px;
+}
+.box .wrapper a {
+    font-size: 0.8rem;
+    color: rgb(255, 255, 255);
+    background-color: #222;
+    border: 20px solid #222;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 10px 0px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* ---------------------------------------- */
+.vision {
+  background-image: url(/img/vision.jpg);
+  width: 1200px;
+  background-size: cover;
+  width: 100%;
+}
+.vision .overwidth h3{
+  color: #fff;
+}
+.vision .overwidth p{
+  color: #fff;
+}
+.vision .overwidth a{
+  font-size: 0.8rem;
+    color: rgb(255, 255, 255);
+    background-image: url(/img/vision.jpg);
+    border: 1px solid #c78c06;
+    display: inline-block;
+    padding: 30px 30px;
+    margin: 10px 0px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* ---------------------------------------- */
+.contact .wrapper, .location .wrapper {
+  background-color: white;
+}
+.hours .wrapper {
+  background-color: white;
+}
+.hours .wrapper table {
+  width: 100%;
+  border-collapse: separate;
+  border: 1px solid;
+}
+.hours .wrapper h3{
+  font-size: 1.5rem;
+}
+.hours .wrapper th, td {
+  padding: 15px;
+  text-align: left;
+  color: #222;
+}
+table, th, td {
+  border: 1px solid #222;
+}
+.hours .wrapper th {
+  background-color: #ffe6ac;
+  color: #222;
+}
+.hours .wrapper table td {
+  border: 1px solid 222;
+}
+
+
+/* ---------------------------------------------------- */
+.team .wrapper img {
+  width: 760px;
+}
+
+.team .wrapper h2 {
+  background-color: white;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 15px;
+}
+hr {
+  border-top: 2px solid #c78c06;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+/* -------------- */
+.contact .wrapper h3{
+  font-size: 1.5rem;
+}
+.contact .wrapper input[type=text] {
+  height: 22px;
+}
+button {
+  background-color: #222;
+  border: none;
+  color:#c78c06 ;
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+/* -------------- */
+.location .wrapper iframe {
+  width: 100%;
+}
+.location .wrapper h3{
+  font-size: 1.5rem;
+}
+/* -------------------------- */
+footer p{
+  background-color: #222;
+  color: #c78c06;
+  font-size: 12px;
+}
+footer a {
+  color: #c78c06;
+}
+
+
+
+
+
+
+
+
+
+/*  DESKTOP---------------- */
+@media screen and (min-width: 760px) {
+  .wrapper {
+    max-width: 1200px;
+    background-color: #ffe6ac;
+    margin: 0  auto;
+  }
+
+  ul{
+    margin-left: 300px;
+  }
+  ul li {
+    float:left;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .wrapper nav .logo {
+    margin-left: 150px;
+    margin-right: 10px;
+  }
+  .wrapper nav ul .home a{
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-right: 10px;
+    background-color: #c78c06;
+    background-position: center;
+  }
+  .wrapper .stage .lobby {
+    width: 100%;
+    object-fit: contain;
+  }
+  .wrapper .stage .prop {
+    width:70%;
+    float: center;
+    margin-left: 70px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    top: 200px;
+  }
+  #search {
+    width: 180px;
+    float: center;
+    margin-left: 800px;
+    height: 35px;
+    margin-bottom: 10px;
+  }
+
+  /* ------GRID------ */
+  .services {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  .services .digital {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+  }
+  .services .marketing {
+    grid-column: 4 / span 3;
+    grid-row: 1 / span 1 ;
+  }
+  .services .video {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1 ;
+  }
+  .services .web {
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 1 ;
+  }
+  .services .print {
+    grid-column: 5 / span 2;
+    grid-row: 2 / span 1 ;
+  }
+  
+
+  .team .wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .team .wrapper .johndoe {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+  .team .wrapper .johnbio {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+  .team .wrapper .bobrite {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .team .wrapper .bobbio {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .team .wrapper .johndoe {
+    background-color: #fff;
+  }
+  .team .wrapper .johnbio {
+    background-color: #ffe6ac;
+  }
+  .team .wrapper .bobbio {
+    background-color: #ffe6ac;
+  }
+}
+
+
+
+
