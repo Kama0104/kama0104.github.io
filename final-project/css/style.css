@@ -448,7 +448,30 @@ footer a {
     width: 600px;
   }
   textarea {
-    height: 160px;
+    height: 240px;
     width: 600px;
   }
+
+  /* SNOOP : add a parent class for the contact and location section and name it snoop. max-width and margin are same as wrapper. use grid to put "location" next to "contact us"-- */
+  .snoop {
+    max-width: 1200px;
+    margin: 0  auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 500px 250px;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  .snoop .contact {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+  .snoop .location {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+  .snoop .hours {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+  } 
 }
